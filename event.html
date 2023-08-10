@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Event Manager App</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <header>
+        <h1>Events</h1>
+        <a href="index.html">Home Page</a>
+    </header>
+    <main>
+        <h2>Filter by Category</h2>
+        <select id="categoryFilter">
+            <option value="All">All</option>
+            <option value="Music">Music</option>
+            <option value="Sports">Sports</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+        
+        <h2>Sort by Price</h2>
+        <select id="priceSort">
+            <option value="None">None</option>
+            <option value="Ascending">Ascending</option>
+            <option value="Descending">Descending</option>
+        </select>
+        
+        <div id="eventCards" class="card-container">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Event Manager App</p>
+    </footer>
+    <script src="event.js"></script>
+</body>
+</html>

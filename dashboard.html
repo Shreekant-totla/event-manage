@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Event Management App</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <button id="logoutButton">Logout</button>
+        <a href="event.html">Events</a>
+    </header>
+    <main>
+        <div id="form">
+            <h2>Create Event</h2>
+                <form id="createEventForm">
+                    <label for="poster">Poster Image Url</label>
+                    <input type="text" id="poster" name="poster" required>
+                    <label for="eventName">Name of the Event</label>
+                    <input type="text" id="eventName" name="eventName" required>
+                    <label for="eventDescription">Description of Event</label>
+                    <textarea id="eventDescription" name="eventDescription" required></textarea>
+                    <label for="eventDate">Date:</label>
+                    <input type="date" id="eventDate" name="eventDate" required>
+                    <label for="eventLocation">Location:</label>
+                    <input type="text" id="eventLocation" name="eventLocation" required>
+                    <label for="eventCategory">Category:</label>
+                    <select name="eventCategory" id="eventCategory">
+                        <option value="Music">Music</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Workshop">Workshop</option>
+                    </select>
+                    <label for="eventPrice">Price:</label>
+                    <input type="number" id="eventPrice" name="eventPrice" required>
+                    <button type="submit" id="submitButton">Create Event</button>
+                </form>
+        </div>
+        <div id="form1">   
+                <h2>Event List</h2>
+                <table id="eventTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="eventListTable"></tbody>
+                </table>
+        </div>
+        
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>
